@@ -14,6 +14,7 @@ body {
     min-height: 100vh;
     background: radial-gradient(#d4d4d4, #630000);
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .logo {

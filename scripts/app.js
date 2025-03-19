@@ -1,3 +1,5 @@
+import funcaoTal from "./alert.js";
+
 const wrapper = document.querySelector('.wrapper');
 const inputField = document.querySelector('input');
 const weatherImg = wrapper.querySelector('.first-part img')
@@ -53,6 +55,7 @@ function weatherDetails(info){
     }else if((id >= 300 && id <= 321) || (id >= 500 && id <= 531)){
         weatherImg.src = 'Icons/rain.png';
     }
+    funcaoTal(weatherImg) // Chama a func pra verificar a mudança do icon
 }
 
 function calculateEnergy(info) {
