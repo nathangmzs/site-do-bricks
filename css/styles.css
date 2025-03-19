@@ -17,6 +17,20 @@ body {
     overflow: hidden;
 }
 
+header {
+    width: 100%;
+    background-color: rgba(23, 0, 0, 0.8);
+    color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    border-radius: 0 0 0.7rem 0.7rem;
+    top: 0;
+    box-shadow: 0 7px 25px #302929;
+}
+
 .logo {
     position: absolute;
     display: flex;
