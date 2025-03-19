@@ -1,7 +1,12 @@
 
+let elementExist = (elementIdentific) => {
+    return document.querySelector(`${elementIdentific}`)
+}
+
 let rainPng = (numberRain) => {
     // alert("RAIN")
     const main = document.createElement("main");
+    main.setAttribute("id", "mainRain");
     main.style.width = "100dvw";
     main.style.height = "100dvh";
     main.style.zIndex = "-1";
@@ -28,17 +33,34 @@ let rainPng = (numberRain) => {
     }
 };
 
+let rainRemove = () => {
+    if (elementExist("#mainRain")){
+        document.body.removeChild(document.querySelector("#mainRain"))
+    }
+};
+
+let cloudRemove = () => {
+    if (elementExist("#mainCloud")){
+        document.body.removeChild(document.querySelector("#mainCloud"))
+    }
+};
+
+
 function funcaoTal(img){
     let weatherSource = `${img.src}`;
     let icon = weatherSource.split("/")[4]
     let state = "";
 
     if (icon == "rain.png"){
+        cloudRemove()
         rainPng(120) // o param é o número de gotas de chuvas;
         state = "Rain";
     } else if (icon == "clear.png"){
+        rainRemove()
+        // cloudRemove()
         state = "Normal";
     } else if (icon == "cloud.png"){
+        rainRemove()
         state = "Cloud";
     } else{
         state = "Undefined";
