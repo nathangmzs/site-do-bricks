@@ -123,20 +123,20 @@ header {
 }
 
 .first-part .temp .deg{
-    font-size: 35px;
+    font-size: calc(15pt + 25%);
     font-weight: 600;
     margin: 0 -45px -25px 0;
     color:  rgb(255, 255, 255);
 }
 
 .first-part .temp .numb {
-    font-size: 25px;
+    font-size: calc(13pt + 25%);
     font-weight: 600;
     color:  rgb(255, 255, 255);
 }
 
 .first-part .temp .weather {
-    font-size: 20px;
+    font-size: calc(10pt + 25%);
     font-weight: 600;
     color: rgb(255, 255, 255);
 }
@@ -149,13 +149,13 @@ header {
 }
 
 .first-part .location i{
-    font-size: 32px;
+    font-size: calc(15pt + 25%);
     color: rgb(228, 0, 11);
     padding-bottom: 5px;
 }
 
 .first-part .location span{
-    font-size: 20px;
+    font-size: calc(10pt + 25%);
     font-weight: 600;
     color: rgb(255, 255, 255);
 }
