@@ -231,7 +231,8 @@ header {
 @media screen and (max-width: 700px) {
     .wrapper {
         width: 80dvw;
-        height: 50dvh;
+        height: auto;
+        padding-bottom: 3dvh;
         background: rgba(0, 0, 0, 0.463);
         border-radius: 10px;
         box-shadow: 0 4px 10px rgba(0,0,0,0.822);
