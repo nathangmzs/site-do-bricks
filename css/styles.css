@@ -230,14 +230,14 @@ header {
 
 @media screen and (max-width: 700px) {
     .wrapper {
-        width: 80dvw;
+        width: 85dvw;
         height: auto;
-        padding-bottom: 3dvh;
         background: rgba(0, 0, 0, 0.463);
         border-radius: 10px;
         box-shadow: 0 4px 10px rgba(0,0,0,0.822);
         border: 1px solid rgba(255, 255, 255, 0.432);
         padding: 20px;
+        padding-bottom: 5dvh;
     }
     
     .first-part{
