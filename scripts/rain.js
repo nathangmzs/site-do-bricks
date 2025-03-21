@@ -3,7 +3,7 @@ let elementExist = (elementIdentific) => {
     return document.querySelector(`${elementIdentific}`)
 }
 
-let rainPng = (numberRain) => {
+function rainPng(numberRain = 0){
     // alert("RAIN")
     const main = document.createElement("main");
     main.setAttribute("id", "mainRain");
@@ -53,7 +53,6 @@ function funcaoTal(img){
 
     if (icon == "rain.png"){
         cloudRemove()
-        rainPng(120) // o param é o número de gotas de chuvas;
         state = "Rain";
     } else if (icon == "clear.png"){
         rainRemove()
@@ -66,7 +65,7 @@ function funcaoTal(img){
         state = "Undefined";
     }
 
-    console.log(`State: ${state}`)
+    console.log(`State: ${state}`);
 }
 
-export default funcaoTal
+export { rainPng, funcaoTal};

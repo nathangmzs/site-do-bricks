@@ -1,4 +1,4 @@
-import funcaoTal from "./alert.js";
+import {funcaoTal, rainPng} from "./rain.js";
 
 const wrapper = document.querySelector('.wrapper');
 const inputField = document.querySelector('input');
@@ -71,13 +71,15 @@ function calculateEnergy(info) {
         const generatorEfficiency = 0.87; //eficiencia do gerador
 
         const energy = 0.5 * Math.PI * Math.pow(turbineBladeRadius, 2) * rainVolume * efficiency + 0.5 * Math.PI *  Math.pow(windSpeed, 3) * generatorEfficiency /10;
-
+        
+        let energi = 96 * energy;
         //display energia gerada
         if (energy > 0) {
             energyGenerated.innerText = `${energy.toFixed(2)} kWh`;
         } else {
             energyGenerated.innerText = '';
         }
+        rainPng(energi)
     } else {
         //se não estiver chovendo
         energyGenerated.innerText = '0 kWh';
