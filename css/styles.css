@@ -230,7 +230,7 @@ header {
 
 @media screen and (max-width: 700px) {
     .wrapper {
-        width: 85dvw;
+        width: 90dvw;
         height: auto;
         background: rgba(0, 0, 0, 0.463);
         border-radius: 10px;
@@ -263,6 +263,13 @@ header {
         margin-top: 4%;
     }
     
+    .second-part .weatherSpace {
+        display: flex;
+        font-size: calc(12pt + 25%);
+        font-weight: 600;
+        color: rgb(255, 255, 255);
+        padding-right: 8px;
+    }
     .logo3{
         width: 100dvw;
         height: 40dvh;
