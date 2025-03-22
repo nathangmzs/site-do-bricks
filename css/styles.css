@@ -18,18 +18,56 @@ body {
     overflow: hidden;
 }
 
+
+body.dark-mode {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100dvh;
+    background: radial-gradient(#ffffff, #7c7c7c);
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+
 header {
     width: 100dvw;
     background-color: rgba(23, 0, 0, 0.8);
     color: #fff;
     padding: 1rem 2rem;
-    text-align: center;
+    text-align: left;
     justify-content: space-between;
     align-items: center;
     border-radius: 0 0 0.7rem 0.7rem;
     box-shadow: 0 7px 25px #302929;
     position: absolute;
     top: 0;
+}
+
+header.dark-mode {
+    background-color: #6a0808;
+    color: #fff;
+    box-shadow: 0 7px 25px #eb7d7d;
+}
+
+.toggle-btn {
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.toggle-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.toggle-btn.dark-mode:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #000;
 }
 
 .logo {
