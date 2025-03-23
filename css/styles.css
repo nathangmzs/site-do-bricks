@@ -18,7 +18,6 @@ body {
     overflow: hidden;
 }
 
-
 body.dark-mode {
     display: flex;
     flex-flow: column wrap;
@@ -29,7 +28,6 @@ body.dark-mode {
     background-repeat: no-repeat;
     overflow: hidden;
 }
-
 
 header {
     width: 100dvw;
@@ -43,12 +41,33 @@ header {
     box-shadow: 0 7px 25px #302929;
     position: absolute;
     top: 0;
+    display: flex;
+    align-items: center;
 }
+
+header .header-logo {
+    left: 2rem;
+    z-index: 10;
+}
+
+header .header-logo-img {
+    width: 5rem;
+    height: auto;
+}
+
 
 header.dark-mode {
     background-color: #6a0808;
     color: #fff;
     box-shadow: 0 7px 25px #eb7d7d;
+}
+
+.title {
+    font-size: calc(20pt + 25%);
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1;
+    margin: 0;
 }
 
 .toggle-btn {
@@ -70,36 +89,32 @@ header.dark-mode {
     color: #000;
 }
 
-.logo {
-    position: absolute;
-    z-index: -1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo3{
+/* Logo flutuante atrás do container */
+.logo3 {
     width: 50dvw;
     height: 50dvh;
-    opacity: .2;
+    opacity: 0.1;
     position: absolute;
     transform: translateY(0px);
     animation: float 7s ease-in-out infinite;
+    z-index: -1; /* Certificando que a logo vai ficar atrás do conteúdo */
 }
 
-@keyframes float{
-    0%{
+@keyframes float {
+    0% {
         transform: translateY(0px);
     }
 
-    50%{
-        transform: translateY(-30px); 
+    50% {
+        transform: translateY(-30px);
     }
 
-    100%{
+    100% {
         transform: translateY(0px);
     }
 }
+
+/* Resto do CSS */
 
 .wrapper {
     width: 45dvw;
