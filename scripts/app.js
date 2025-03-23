@@ -6,6 +6,12 @@ const weatherImg = wrapper.querySelector('.first-part img')
 const energyText = wrapper.querySelector('.energy-text');
 const energyGenerated = wrapper.querySelector('.energy-generated');
 
+
+document.querySelector('.header-logo').addEventListener('click', function (event) {
+    event.preventDefault(); 
+    location.reload(); //recarregar a página
+});
+
 inputField.addEventListener('keyup', (e) => {
     //se o usuário pressionou digitou btn e o valor de entrada não está vazio
     if(e.key == 'Enter' && inputField.value != ""){
