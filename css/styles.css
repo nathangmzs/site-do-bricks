@@ -89,7 +89,6 @@ header.dark-mode {
     color: #000;
 }
 
-/* Logo flutuante atrás do container */
 .logo3 {
     width: 50dvw;
     height: 50dvh;
@@ -97,7 +96,7 @@ header.dark-mode {
     position: absolute;
     transform: translateY(0px);
     animation: float 7s ease-in-out infinite;
-    z-index: -1; /* Certificando que a logo vai ficar atrás do conteúdo */
+    z-index: -1; 
 }
 
 @keyframes float {
@@ -113,8 +112,6 @@ header.dark-mode {
         transform: translateY(0px);
     }
 }
-
-/* Resto do CSS */
 
 .wrapper {
     width: 45dvw;
