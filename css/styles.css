@@ -114,26 +114,6 @@ header .header-logo-img {
     transform: scale(1);
 }
 
-
-/* .toggle-btn.dark-mode {
-    background-color: rgba(0, 0, 0, 0.1);
-    color: #000;
-}
-
-.toggle-btn:not(.dark-mode) {
-    background-color: none;
-    color: #fff;
-}
-
-.toggle-btn:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.toggle-btn.dark-mode:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-    color: #000;
-} */
-
 .logo3 {
     width: 50dvw;
     height: 50dvh;

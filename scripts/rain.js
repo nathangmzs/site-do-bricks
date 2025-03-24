@@ -46,12 +46,12 @@ let cloudRemove = () => {
 };
 
 
-function funcaoTal(img){
+function funcaoTal(img, id){
     let weatherSource = `${img.src}`;
     let icon = weatherSource.split("/")[4]
     let state = "";
 
-    if (icon == "rain.png" || "strom.png"){
+    if (id >= 200 && id <= 232 ){
         cloudRemove()
         state = "Rain";
     } else if (icon == "clear.png"){
