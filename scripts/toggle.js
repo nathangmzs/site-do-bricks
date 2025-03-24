@@ -8,7 +8,7 @@ function toggleMode() {
     body.classList.toggle('dark-mode');
     header.classList.toggle('dark-mode');
 
-    // alternar a logo de acordo com o modo
+    // alternar a logo e o toggle-btn de acordo com o modo
     if (body.classList.contains('dark-mode')) {
         logo.src = "Icons/logodark.png"; 
         sunIcon.classList.remove("active");

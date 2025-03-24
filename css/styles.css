@@ -64,6 +64,7 @@ header .header-logo {
 header .header-logo-img {
     width: 5rem;
     height: auto;
+    cursor: pointer;
 }
 
 @keyframes slideDown {
@@ -87,16 +88,34 @@ header .header-logo-img {
 }
 
 .toggle-btn {
-    background: none;
-    border: 2px solid #fff;
-    color: #fff;
-    padding: 10px 10px;
+    background: transparent;
+    border: none;
     cursor: pointer;
-    border-radius: 40px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
 }
 
-.toggle-btn.dark-mode {
+.icon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.icon.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+/* .toggle-btn.dark-mode {
     background-color: rgba(0, 0, 0, 0.1);
     color: #000;
 }
@@ -113,7 +132,7 @@ header .header-logo-img {
 .toggle-btn.dark-mode:hover {
     background-color: rgba(0, 0, 0, 0.1);
     color: #000;
-}
+} */
 
 .logo3 {
     width: 50dvw;
